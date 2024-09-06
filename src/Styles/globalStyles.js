@@ -11,6 +11,7 @@ export default createGlobalStyle`
   }
 
   body {
+    overflow-x: hidden;
     background: #000000;
   }
 `
