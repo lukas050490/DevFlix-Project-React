@@ -64,7 +64,7 @@ function Detail({ }) {
               movieVideos.map((video) => (
                 <div key={video.id}>
                   <h4>{movie.name}</h4>
-                  <iframe src={`https://www.youtube.com/embed/${movie.key}`}
+                  <iframe src={`https://www.youtube.com/embed/${video.key}`}
                     title='youtube video player'
                     height='500px'
                     width='100%'

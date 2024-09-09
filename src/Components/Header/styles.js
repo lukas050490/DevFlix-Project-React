@@ -9,7 +9,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 10px;
-background-color:${ props => props.$chageBackground ? '#000' : 'transparent'};
+background-color:${ props => props.$changeBackground ? '#000' : 'transparent'};
 transition: background-color 1s ease-in-out;
 
   img {

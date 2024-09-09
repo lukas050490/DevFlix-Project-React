@@ -46,7 +46,7 @@ function Home() {
   return (
     <>
       {movie && (
-        <Background img={getImages(movie.backdrop_path)}>
+        <Background $img={getImages(movie.backdrop_path)}>
           {showModal && <Modal movieId={movie.id} setShowModal={setShowModal} />}
           <Container>
             <Info>
@@ -64,8 +64,8 @@ function Home() {
             </Poster>
           </Container>
         </Background>
-      )}
-      {topMovie && <Slider info={topMovie} title={'Top Filmes'} />}
+      )}{topMovie && <Slider info={topMovie} title={'Top Filmes'} />}
+      
       {topSerie && <Slider info={topSerie} title={'Top Series'} />}
       {PopularSerie && <Slider info={PopularSerie} title={'Popular Series'} />}
       {PopularPerson && <Slider info={PopularPerson} title={'Artistas Populares'} />}
